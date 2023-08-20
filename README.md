@@ -7,11 +7,12 @@ This is a Flask application that allows you to send and receive SMS messages usi
 * Flask
 * Plivo Account (for sending and receiving SMS)
 * Plivo PHLO ID (for workflow integration)
-* Import plivo 
+
 
 
 ## Configuration
 
+*Import the required libraries
 * auth_id: Your Plivo authentication ID.
 * auth_token: Your Plivo authentication token.
 * src: Your Plivo phone number.
