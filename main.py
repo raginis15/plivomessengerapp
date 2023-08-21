@@ -39,10 +39,9 @@ def send_message():
 
     return index()  # Redirect back to the index page
 
-@app.route('/receive', methods=['POST'])
+@app.route('/receive', methods=['GET'])
 def receive_message():
     # Get the necessary data from the incoming request
-    print("Received an incoming message...")
     from_number = request.form.get('From', '')
     received_message = request.form.get('Text', '')
     
