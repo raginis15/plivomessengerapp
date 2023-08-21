@@ -39,7 +39,7 @@ def send_message():
 
     return index()  # Redirect back to the index page
 
-@app.route('/receive', methods=['GET'])
+@app.route('/receive', methods=['POST'])
 def receive_message():
     # Get the necessary data from the incoming request
     print("Received an incoming message...")
